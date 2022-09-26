@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  margin-top: 5%;
+}
+
+/* ADD TASK SECTION */
+.addTaskSection {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.taskInput {
+  padding: 5px;
+  border: none;
+  height: fit-content;
+  outline: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.addTaskBtn {
+  background-color: #3d8ef4;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* LIST OF TASK SECTION */
+.taskListSection {
+  width: 300px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.taskList {
+  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  border: 1px solid #808080;
+}
+
+.taskDetail {
+  flex: 1;
+  font-size: 20px;
+}
+
+.editBtn {
+  color: #3d8ef4;
+  font-size: 18px;
+}
+
+.deleteBtn {
+  font-size: 18px;
+  color: #e21717;
+}
+
+/* EDIT BUTTON MODAL BOX */
+.modalBox {
+  display: none;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.editModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 30px 0;
+}
+
+.editModalInput {
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btnSection {
+  width: 220px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnDesign {
+  background-color: #3d8ef4;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.cancelBtn {
+  background-color: #e21717;
+}
